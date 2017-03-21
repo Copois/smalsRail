@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Smals Rail",
+  "version": "1.0.0",
+  "version_name": "1.0.0 beta",
+
+  "description": "",
+  "icons": {
+      "128": "images/icon.gif"
+  },
+  "author": "Copois Pierre",
+  "background": {
+    "persistent": true,
+    "scripts": [ "js/storage.js"]
+  },
+  "browser_action": {
+      "default_popup": "html/popup.html",
+      "default_title": "Smals Rail"
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "options_page": "html/options.html",
+  "permissions": ["tabs", "notifications", "http://*/", "https://*/"],
+  "web_accessible_resources": ["images/icon.gif"]
+}
